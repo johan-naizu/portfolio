@@ -13,6 +13,7 @@
     "framer-motion": "^11.1.9",
     "next": "14.2.3",
     "react": "^18",
+    "react-bubble-ui": "github:johan-naizu/React-Bubble-UI",
     "react-dom": "^18",
     "react-type-animation": "^3.2.0"
   },

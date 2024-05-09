@@ -1,0 +1,42 @@
+/* myComponent.css */
+
+.myBubbleUI {
+  width: 1000px;
+  height: 650px;
+  border-radius: 50px;
+}
+@media only screen and (max-width: 700px) {
+  .myBubbleUI {
+    width: 95vw;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .child {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .child {
+    width: 20px;
+    height: 20px;
+  }
+  .childdiv {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .child {
+    width: 15px;
+    height: 15px;
+  }
+  .childdiv {
+    width: 35%;
+    height: 35%;
+  }
+}
