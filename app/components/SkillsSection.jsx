@@ -56,7 +56,7 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="py-16">
       <div className="flex flex-col items-center container">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center text-white pb-1 sm:pb-5">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary pb-1 sm:pb-5">
           Skills and Tools
         </h2>
         <BubbleUI options={options} className="myBubbleUI bg-bg">
