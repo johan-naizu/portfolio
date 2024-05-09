@@ -54,9 +54,9 @@ const SkillsSection = () => {
     return <Child data={data} className="child" key={i} />;
   });
   return (
-    <section id="skills" className="py-6 sm:py10 lg:py-16">
+    <section id="skills" className="py-12 lg:py-16">
       <div className="flex flex-col items-center container">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center text-white pb-5">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center text-white pb-1 sm:pb-5">
           Skills and Tools
         </h2>
         <BubbleUI options={options} className="myBubbleUI bg-bg">
