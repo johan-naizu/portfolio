@@ -54,7 +54,7 @@ const SkillsSection = () => {
     return <Child data={data} className="child" key={i} />;
   });
   return (
-    <section id="skills" className="py-10 lg:py-16">
+    <section id="skills" className="py-6 sm:py10 lg:py-16">
       <div className="flex flex-col items-center container">
         <h2 className="text-3xl lg:text-4xl font-bold text-center text-white pb-5">
           Skills and Tools
