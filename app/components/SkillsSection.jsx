@@ -31,10 +31,10 @@ const SkillsSection = () => {
     gutter = -20;
   }
   if (width < 500) {
-    gutter = -45;
+    gutter = -30;
   }
   if (width < 450) {
-    gutter = -60;
+    gutter = -50;
   }
   const options = {
     size: 106,
