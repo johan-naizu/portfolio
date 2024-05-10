@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    <section id="hero" className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -38,15 +38,15 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary to-secondary hover:bg-slate-200 text-white"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary to-secondary hover:scale-105 transition duration-300 text-white"
             >
               Hire Me
             </Link>
             <Link
               href="https://cdn.jonaz.tech/resume"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary to-secondary hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary to-secondary hover:scale-105 transition duration-300 text-white mt-3"
             >
-              <span className="block bg-bg hover:bg-[#295564] rounded-full px-5 py-2">
+              <span className="block bg-bg hover:bg-[#295564] transition duration-300 rounded-full px-5 py-2">
                 Download CV
               </span>
             </Link>
