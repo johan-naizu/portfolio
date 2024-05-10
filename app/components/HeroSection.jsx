@@ -37,7 +37,8 @@ const HeroSection = () => {
           </p>
           <div>
             <Link
-              href="/#contact"
+              href="#contact"
+              scroll={true}
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary to-secondary hover:scale-105 transition duration-300 text-white"
             >
               Hire Me
@@ -46,7 +47,7 @@ const HeroSection = () => {
               href="https://cdn.jonaz.tech/resume"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary to-secondary hover:scale-105 transition duration-300 text-white mt-3"
             >
-              <span className="block bg-bg hover:bg-[#295564] transition duration-300 rounded-full px-5 py-2">
+              <span className="block bg-bg rounded-full px-5 py-2">
                 Download CV
               </span>
             </Link>
