@@ -140,7 +140,7 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
-              className="bg-white border border-primary z-30 placeholder-gray text-bg text-sm rounded-lg block w-full p-2.5"
+              className="bg-white border border-primary placeholder-gray text-bg text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about..."
             />
           </div>
