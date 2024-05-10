@@ -11,8 +11,7 @@ const projects = [
   {
     id: 2,
     title: "Tathva'23",
-    description:
-      "The official website of Tathva'23, the annual techno-management fest of NIT Calicut",
+    description: "The website of Tathva'23, the tech fest of NIT Calicut",
     image: "/images/projects/t23.png",
     gitUrl: "https://github.com/Tathva-23/tathva-backend",
     previewUrl: "https://23.tathva.org",
@@ -43,7 +42,7 @@ const projects = [
     description: "A multipurpose discord bot",
     image: "/images/projects/sypher.png",
     gitUrl: "https://github.com/johan-naizu/Sypher",
-    previewUrl: "https://sypherbot.in",
+    previewUrl: "https://sypher.jonaz.tech",
     tag: ["All", "API"],
   },
   {
