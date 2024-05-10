@@ -140,13 +140,13 @@ const EmailSection = () => {
             <textarea
               name="message"
               id="message"
-              className="bg-white border border-primary placeholder-gray text-bg text-sm rounded-lg block w-full p-2.5"
+              className="bg-white border border-primary z-30 placeholder-gray text-bg text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about..."
             />
           </div>
           <button
             type="submit"
-            className="bg-gradient-to-br from-primary to-secondary transition duration-300 hover:scale-105 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+            className="bg-gradient-to-br z-10 from-primary to-secondary transition duration-300 hover:scale-105 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
             Send Message
           </button>
