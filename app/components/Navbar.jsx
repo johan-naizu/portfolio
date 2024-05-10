@@ -6,6 +6,7 @@ import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
 const navLinks = [
   {
     href: "#skills",
@@ -60,7 +61,17 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="fixed left-0 right-0 bg-bg"
+        >
+          <MenuOverlay links={navLinks} />
+        </motion.div>
+      ) : null}
     </nav>
   );
 };
