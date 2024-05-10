@@ -65,34 +65,19 @@ const EmailSection = () => {
             className="hover:scale-105 transition duration-300"
             href="https://github.com/johan-naizu"
           >
-            <Image
-              className="dark:invert"
-              src={GithubIcon}
-              height={40}
-              alt="Github Icon"
-            />
+            <Image src={GithubIcon} height={40} alt="Github Icon" />
           </Link>
           <Link
             className="hover:scale-105 transition duration-300"
             href="https://linkedin.com/in/johan-naizu/"
           >
-            <Image
-              className="dark:invert"
-              src={LinkedinIcon}
-              height={40}
-              alt="Linkedin Icon"
-            />
+            <Image src={LinkedinIcon} height={40} alt="Linkedin Icon" />
           </Link>
           <Link
             className="hover:scale-105 transition duration-300"
             href="https://discord.com/invite/SqS3kEGu5E"
           >
-            <Image
-              className="dark:invert"
-              src={DiscordIcon}
-              height={40}
-              alt="Discord Icon"
-            />
+            <Image src={DiscordIcon} height={40} alt="Discord Icon" />
           </Link>
         </div>
       </div>
