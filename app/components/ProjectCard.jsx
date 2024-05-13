@@ -71,7 +71,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
             backgroundPosition: "center",
           }}
         >
-          <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-bg bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
+          <div className="overlay rounded-xl items-center justify-center absolute top-0 left-0 w-full h-full bg-bg bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
             {gitUrl ? (
               <Link
                 href={gitUrl}
