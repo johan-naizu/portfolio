@@ -11,7 +11,7 @@ const projects = [
   {
     id: 2,
     title: "Tathva'23",
-    description: "The website of Tathva'23, the tech fest of NIT Calicut",
+    description: "The official website of Tathva'23",
     image: "/images/projects/t23.png",
     gitUrl: "https://github.com/Tathva-23/tathva-backend",
     previewUrl: "https://23.tathva.org",
@@ -29,8 +29,7 @@ const projects = [
   {
     id: 4,
     title: "Ragam'23",
-    description:
-      "The official website of Ragam'23, the annual cultural fest of NIT Calicut",
+    description: "The official website of Ragam'23",
     image: "/images/projects/r23.png",
     gitUrl: "https://github.com/Ragam23/ragam-23-backend",
     previewUrl: "https://ragam.co.in",
