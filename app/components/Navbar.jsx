@@ -67,7 +67,7 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className="fixed left-0 right-0 bg-bg"
+          className="fixed left-0 right-0"
         >
           <MenuOverlay links={navLinks} />
         </motion.div>
