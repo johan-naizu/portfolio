@@ -62,10 +62,14 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </motion.div>
         </div>
       </motion.div>
-      <div className="block md:hidden">
+      <div className="backdrop-filter backdrop-blur bg-primary bg-opacity-10 p-3 rounded-xl shadow-gray-800 shadow-lg block md:hidden">
         <div
-          className="h-52 md:h-72 rounded-t-xl relative group"
-          style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+          className="h-52 rounded-xl relative group"
+          style={{
+            background: `url(${imgUrl})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
           <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-bg bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
             {gitUrl ? (
@@ -86,7 +90,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
             ) : null}
           </div>
         </div>
-        <div className="text-white rounded-b-xl mt-3 bg-bg py-6 px-4">
+        <div className="text-white rounded-b-xl mt-3 bg-transparent py-6 px-4">
           <h5 className="text-xl font-semibold mb-2">{title}</h5>
           <p className="text-[#ADB7BE]">{description}</p>
         </div>
