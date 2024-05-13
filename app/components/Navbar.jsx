@@ -9,6 +9,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 const navLinks = [
   {
+    href: "#hero",
+    title: "Home",
+  },
+  {
     href: "#skills",
     title: "Skills",
   },
