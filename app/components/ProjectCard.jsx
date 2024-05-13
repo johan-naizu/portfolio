@@ -21,6 +21,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           whileHover={{
             opacity: 1,
           }}
+          whileTap={{
+            opacity: 1,
+          }}
           initial={{
             opacity: 0,
           }}
