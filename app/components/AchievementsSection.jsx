@@ -22,7 +22,7 @@ const achievementsList = [
   },
   {
     metric: "Projects",
-    value: "6",
+    value: "8",
   },
   {
     metric: "Years",
