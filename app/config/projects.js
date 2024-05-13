@@ -50,7 +50,6 @@ const projects = [
     description: "A CLI chatbot made with Node.js and ChatGPT API",
     image: "/images/projects/chatbot.webp",
     gitUrl: "https://github.com/johan-naizu/chat-bot",
-    previewUrl: "https://github.com/johan-naizu/chat-bot",
     tag: ["All", "API"],
   },
 ];
