@@ -10,18 +10,22 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-bg bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
-          <Link
-            href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white hover:scale-105 group/link transition duration-300"
-          >
-            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition duration-300" />
-          </Link>
-          <Link
-            href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white hover:scale-105 group/link tranition duration-300"
-          >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition duration-300" />
-          </Link>
+          {gitUrl ? (
+            <Link
+              href={gitUrl}
+              className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white hover:scale-105 group/link transition duration-300"
+            >
+              <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition duration-300" />
+            </Link>
+          ) : null}
+          {previewUrl ? (
+            <Link
+              href={previewUrl}
+              className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white hover:scale-105 group/link tranition duration-300"
+            >
+              <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white transition duration-300" />
+            </Link>
+          ) : null}
         </div>
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-bg py-6 px-4">
