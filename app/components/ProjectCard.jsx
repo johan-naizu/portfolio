@@ -62,9 +62,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
           </motion.div>
         </div>
       </motion.div>
-      <div className="backdrop-filter backdrop-blur bg-primary bg-opacity-10 p-3 rounded-xl shadow-gray-800 shadow-lg block md:hidden">
+      <div className="backdrop-filter backdrop-blur bg-primary bg-opacity-10 p-3 rounded-xl shadow-gray-800 shadow-lg block md:hidden group">
         <div
-          className="h-52 rounded-xl relative group"
+          className="h-52 rounded-xl relative"
           style={{
             background: `url(${imgUrl})`,
             backgroundSize: "cover",
