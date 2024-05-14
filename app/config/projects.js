@@ -69,6 +69,14 @@ const projects = [
     previewUrl: "https://ragam.co.in",
     tag: ["All", "Web"],
   },
+  {
+    id: 9,
+    title: "Univent",
+    description: "API for an event management system",
+    image: "/images/projects/univent.jpg",
+    gitUrl: "https://github.com/johan-naizu/univent",
+    tag: ["All", "API"],
+  },
 ];
 
 export default projects;
