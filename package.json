@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.3",
+    "axios": "^1.6.8",
     "framer-motion": "^11.1.9",
     "next": "14.2.3",
     "react": "^18",
     "react-animated-numbers": "^0.18.0",
     "react-bubble-ui": "github:johan-naizu/React-Bubble-UI",
     "react-dom": "^18",
+    "react-lottie-player": "^2.0.0",
     "react-toastify": "^10.0.5",
     "react-type-animation": "^3.2.0",
     "resend": "^3.2.0"

@@ -9,28 +9,27 @@ const AnimatedNumbers = dynamic(
   { ssr: false },
 );
 
-const achievementsList = [
-  {
-    metric: "Languages",
-    value: "4",
-    postfix: "+",
-  },
-  {
-    postfix: "+",
-    metric: "Frameworks",
-    value: "8",
-  },
-  {
-    metric: "Projects",
-    value: "9",
-  },
-  {
-    metric: "Years",
-    value: "4",
-  },
-];
-
-const AchievementsSection = () => {
+const AchievementsSection = ({ data }) => {
+  const achievementsList = [
+    {
+      metric: "Languages",
+      value: data.languages,
+      postfix: "+",
+    },
+    {
+      postfix: "+",
+      metric: "Frameworks",
+      value: data.frameworks,
+    },
+    {
+      metric: "Projects",
+      value: data.projects,
+    },
+    {
+      metric: "Years",
+      value: data.years,
+    },
+  ];
   return (
     <div className="py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
       <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
