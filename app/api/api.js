@@ -4,7 +4,7 @@ export async function getProjects() {
   return new Promise(async (resolve, reject) => {
     try {
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/projects?populate=*`,
+        `${process.env.BACKEND_URL}/api/projects?populate=*`,
       );
       let projects = [];
       response.data.data.forEach((project) => {
@@ -12,7 +12,7 @@ export async function getProjects() {
           id: project.id,
           title: project.attributes.title,
           description: project.attributes.description,
-          image: `${process.env.NEXT_PUBLIC_BACKEND_URL}${project.attributes.image.data.attributes.url}`,
+          image: `${process.env.BACKEND_URL}${project.attributes.image.data.attributes.url}`,
           gitUrl: project.attributes.gitUrl,
           previewUrl: project.attributes.previewUrl,
           tags: project.attributes.tags.data.map((tag) => tag.attributes.name),
@@ -29,7 +29,7 @@ export async function getTags() {
   return new Promise(async (resolve, reject) => {
     try {
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/project-tags`,
+        `${process.env.BACKEND_URL}/api/project-tags`,
       );
       let tags = [];
       response.data.data.forEach((tag) => {
@@ -46,7 +46,7 @@ export async function getAchievements() {
   return new Promise(async (resolve, reject) => {
     try {
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/achievement`,
+        `${process.env.BACKEND_URL}/api/achievement`,
       );
       resolve(response.data.data.attributes);
     } catch (error) {
